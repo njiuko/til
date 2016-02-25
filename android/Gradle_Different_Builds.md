@@ -5,7 +5,7 @@
 
 ###Declare Constants
 
-~~~android
+~~~ java
 def varVersionName = "1.1.1"
 def varVersionNameLetters = "one.one.one"
 def varVersionCode = 26
@@ -15,7 +15,7 @@ then inside the **android{}** tag:
 
 For the **default configuration**:
 
-~~~android
+~~~ java
 defaultConfig {
         applicationId "de.example.app"
         minSdkVersion 14
@@ -28,7 +28,7 @@ defaultConfig {
 
 Then we play with our different **build Types**:
 
-~~~android
+~~~ java
 buildTypes {
         release {
             minifyEnabled false
@@ -49,7 +49,7 @@ buildTypes {
 
 Inside the **application** tag:
 
-~~~android
+~~~java
 tools:replace="android:label"
 android:label="${nameApplicationLabel}"
 ~~~
