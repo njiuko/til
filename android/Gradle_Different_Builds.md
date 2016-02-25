@@ -49,7 +49,7 @@ buildTypes {
 
 Inside the **application** tag:
 
-~~~java
+~~~ java
 tools:replace="android:label"
 android:label="${nameApplicationLabel}"
 ~~~
@@ -71,7 +71,7 @@ Our app will be created with the following:
 
 		* Result: 
 		
-		~~~
+		~~~ java
 		applicationId "de.example.app"
 		~~~
 * App name: 
@@ -80,7 +80,7 @@ Our app will be created with the following:
 	3. Which in this case comes from the **defaultConfig**
 		* Result: 
 		
-		~~~
+		~~~ java
 		manifestPlaceholders = [nameApplicationLabel: "@string/app_name"]
 		~~~
 * versionName: 
@@ -89,7 +89,7 @@ Our app will be created with the following:
 	3. And get it from the **varVersionName**
 		* Result: 
 		
-		~~~
+		~~~ java
 		versionName "${varVersionName}"
 		def varVersionName = "1.1.1"
 		~~~
@@ -104,7 +104,7 @@ Our app will be created with the following:
 
 		* Result: 
 		
-		~~~
+		~~~ java
 		applicationId "de.example.app"
 		applicationIdSuffix ".debug." + "${varVersionNameLetters}"
 		def varVersionNameLetters = "one.one.one"
@@ -116,7 +116,7 @@ Our app will be created with the following:
 	4. And will add the **varVersionName**
 		* Result: 
 		
-		~~~
+		~~~ java
 		manifestPlaceholders = [nameApplicationLabel: "AppName" + "${varVersionName}"]
 		versionName "${varVersionName}"
 		def varVersionName = "1.1.1"
@@ -128,7 +128,7 @@ Our app will be created with the following:
 	4. And will add the **versionNameSuffix** from the **debug build type**
 		* Result: 
 		
-		~~~
+		~~~ java
 		def varVersionName = "1.1.1"
 		versionName "${varVersionName}"
 		versionNameSuffix ".debug"
