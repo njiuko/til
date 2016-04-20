@@ -34,11 +34,11 @@ public Activity getActivityInstance(){
 It is useful for modifying views on the main thread while testing:
 
 ~~~ java
-private void setPin(final Activity currActivity, final String pin) {
-        currActivity.runOnUiThread(new Runnable() {
+private void setPin(final String pin) {
+        currentActivity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                ((PinEntryView)currActivity.findViewById(R.id.pin_view)).setText(pin);
+                ((PinEntryView)currentActivity.findViewById(R.id.pin_view)).setText(pin);
             }
         });
     }
