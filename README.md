@@ -12,6 +12,14 @@
 
 [What to be aware of when having different Build Types for an app with Content Providers.](android/different_builds_when_having_content_providers.md)
 
+[How to get an Activity instance inside an Espresso Test.](android/how_to_get_activity_instance_inside_test.md)
+
+[How to do an Animation Drawable](android/animation_drawable.md)
+
+[Android Studio best Shortcuts and Tips](android/android_studio_best_shortcuts.md)
+
+[How to build Animations.](android/animations.md)
+
 ## [UNIX](unix/)
 
 [List and sort directory size](unix/list_and_sort_dir_size.md)
